@@ -1,0 +1,104 @@
+div.instanceToolbar
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 32px;
+
+	z-index: 1;
+}
+
+div.instanceToolbar ul.instanceList
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	width: calc(100vw - 50px);
+	height: 32px;
+	
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+	line-height: 38px;
+}
+div.instanceToolbar ul.instanceList li
+{
+	display: inline;
+
+	height: 28px;
+	vertical-align: bottom;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: default;
+}
+div.instanceToolbar ul.instanceList li span
+{
+	display: inline-block;
+	height: inherit;
+	font-size: 20px;
+}
+div.instanceToolbar ul.instanceList li span[action=close]
+{
+	transition: 300ms;
+	font-size: 22px;
+}
+div.instanceToolbar ul.instanceList li span[action=close]:hover
+{
+	transition: 100ms;
+	cursor: pointer;
+	position: relative;
+}
+
+div.instanceToolbar span[action=newInstance]
+{
+	position: fixed;
+	bottom: -5px;
+	right: 25px;
+	font-size: 32px;
+	transition: 300ms;
+}
+div.instanceToolbar span[action=newInstance]:hover
+{
+	transition: 100ms;
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+div.selectTabType
+{
+	position: fixed;
+	bottom: 32px;
+	right: 0;
+	width: 150px;
+	min-height: 32px;
+	border-top-left-radius: 5px;
+	display: none;
+	z-index: 1000;
+}
+div.selectTabType ul
+{
+	padding: 0;
+	margin: 0;
+	border-top-left-radius: 5px;
+}
+div.selectTabType ul li
+{
+	padding: 4px;
+	display: block;
+	font-size: 16px;
+	transition: 100ms;
+	border-top-left-radius: 5px;
+}
+div.selectTabType ul li:hover
+{
+	transition: 300ms;
+	cursor: pointer;
+}

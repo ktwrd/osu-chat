@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+		<link type="text/css" rel="stylesheet" href="https://storage.googleapis.com/cdn.jyles.club/libraries/materialize/css/materialize.min.css"  media="screen,projection"/>
+	</head>
+	<body>
+		<div class="notification">
+			<ul>
+				<!--
+					<li GUID="<string>" action="notification">
+						<span type="<TYPE>"></span>
+					</li>
+				-->
+			</ul>
+		</div>
+		<div class="instanceToolbar">
+			<ul class="instanceList">
+				<!--
+				<li GUID="name">
+					<span action="label">Name</span>
+					<span action="close">&#x292B;</span>
+				</li>
+				-->
+			</ul>
+			<span action="newInstance">&#65291;</span>
+		</div>
+		<div class="selectTabType">
+			<ul>
+				<!--
+				<li>
+					<span type="instanceType">Type</span>
+				</li>
+				-->
+			</ul>
+		</div>
+		<div class="loader">
+			<div class="blurbg">
+				<div class="container">
+					<h3 action="title"></h3>
+					<div class="progress">
+						<div class="indeterminate"></div>
+					</div>
+					<span action="description"></span>
+				</div>
+			</div>
+		</div>
+		<div class="instanceData">
+			<!-- 
+				All of this is filled in with <div>'s from that instance type.
+			-->
+		</div>
+		<script src="src/osuchat.js" type="text/javascript"></script>
+	</body>
+</html>

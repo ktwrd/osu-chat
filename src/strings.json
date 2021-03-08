@@ -1,0 +1,22 @@
+{
+	"instance":
+	{
+		"error":
+		{
+			"nullconfig": "No config given.",
+			"nullconfigtype": "Incorrect or no config type given.",
+			"instancefocused": "Instance is focused.",
+			"instancehidden": "Instance is not Focused.",
+			"invalidconfigtype": "Invalid config type, read documentation.",
+			"exists": "Instance type exists already."
+		}
+	},
+	"settings":
+	{
+		"error":
+		{
+			"null_username": "Username Field is empty.",
+			"null_key": "Key Field is empty."
+		}
+	}
+}

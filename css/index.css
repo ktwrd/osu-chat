@@ -1,0 +1,157 @@
+@import "colorScheme/_palette.css";
+@import "colorScheme/default.css";
+@import "instanceToolbar.css";
+@import "notification.css";
+@import "loader.css";
+body
+{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+div.container
+{
+	width: 94%;
+	left: 2%;
+	right: 2%;
+	padding-bottom: 100px;
+}
+.row .col.s6 {
+	width: 50%;
+	margin-left: auto;
+	left: auto;
+	right: auto;
+}
+.row .col {
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 .75rem;
+	min-height: 1px;
+}
+.row {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.input-field {
+	position: relative;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+div.padding
+{
+	padding-bottom: 60px;
+	height: 60px;
+	width: 4px;
+}
+div.center
+{
+	text-align:center;
+	width: 100%;
+}
+
+table.home
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	align-self:center;
+}
+table.home td
+{
+	width: 50%;
+	text-align: center;
+	vertical-align: top;
+}
+
+h3[action=connectIRC]
+{
+	transition: 300ms;
+	position: absolute;
+	text-align:center;
+	width: 180px;
+	left: calc(50vw - 90px);
+}
+h3[action=connectIRC][allow=false]
+{
+	color: rgba(90,40,40);
+	cursor: not-allowed;
+	transform: scale(0.8);
+
+}
+h3[action=connectIRC][allow=true]
+{
+	animation: 8s swayAnim ease-in-out infinite;
+}
+h3[action=connectIRC][allow=true]:hover 
+{
+	animation-play-state: initial;
+	animation: 300ms hoverTilt forwards;
+	transition: 100ms;
+	cursor: pointer;
+}
+
+@keyframes hoverTilt
+{
+	0%
+	{
+		transform: rotate(0deg) scale(1);
+	}
+	60%
+	{
+		transform: rotate(8deg) scale(1.1);
+	}
+	100%
+	{
+		transform: rotate(10deg) scale(1.2);
+	}
+}
+@keyframes reversehoverTilt
+{
+	100%
+	{
+		transform: rotate(0deg) scale(1);
+	}
+	60%
+	{
+		transform: rotate(8deg) scale(1.1);
+	}
+	0%
+	{
+		transform: rotate(10deg) scale(1.2);
+	}
+}
+
+@keyframes swayAnim
+{
+	25%
+	{
+		transform: rotate(0);
+	}
+	50%
+	{
+		transform: rotate(-3deg);
+	}
+	75%
+	{
+		transform: rotate(3deg);
+	}
+	100%
+	{
+		transform: rotate(0);
+	}
+}
+@keyframes zoomInOut
+{
+	0%
+	{
+		transform: scale(1);
+	}
+	50%
+	{
+		transform: scale(1.1);
+	}
+	100%
+	{
+		transform: scale(1);
+	}
+}
